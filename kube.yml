@@ -1,15 +1,15 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: train-schedule-service3
+  name: train-schedule-service4
 spec:
   type: NodePort
   selector:
     app: train-schedule
   ports:
   - protocol: TCP
-    port: 8084
-    nodePort: 8084
+    port: 8085
+    nodePort: 8085
    
 ---
 
@@ -33,5 +33,5 @@ spec:
         -name: train-schedule
         image: $ DOCKER_IMAGE_NAME:$BUILD_NUMBER
         ports:
-         -containerPort: 8084
+         -containerPort: 8085
     
