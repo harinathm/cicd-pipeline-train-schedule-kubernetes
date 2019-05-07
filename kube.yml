@@ -19,7 +19,7 @@ metadata:
   name: tarin-schedule-deployment
   labels:
     app: train-schedule
- spec:
+spec:
     replicas: 2
     selector:
       matchLabels:
