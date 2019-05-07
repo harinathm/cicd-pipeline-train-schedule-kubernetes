@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: train-schedule-service2
+  name: train-schedule-service3
 spec:
   type: NodePort
   selector:
